@@ -7,7 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Spawn-gear loadout preset (`custom/loadout.json`, adopted from Chernarus), wired into `cfggameplay.json` via `spawnGearPresetFiles`.
+
 ### Changed
+- **Central economy loot reduced ~50%:** halved `nominal` and `min` for 1907 types in `db/types.xml` (ceil rounding, so `1` stays `1`), excluding `deloot="1"` and `Underground`-usage types.
+- **Infected density raised:** every positive dynamic infected count (`dmin`/`dmax`) in `env/zombie_territories.xml` incremented by 1.
+- `db/globals.xml`: adopted Chernarus idle-mode and login/hop/penalty timer values.
+- `db/messages.xml`: adopted Chernarus new-player onboarding message rotation, rebranded "Chernarus" → "Livonia".
+- `cfggameplay.json`: adopted Chernarus gameplay config (spawn loadout, base-building placement checks disabled, respawn-in-unconsciousness and personal-light tweaks); environment temperatures set to flat `-4`/`2` year-round.
+
 ### Deprecated
 ### Removed
 ### Fixed
