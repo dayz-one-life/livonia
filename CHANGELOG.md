@@ -7,13 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Vanilla DayZ "Road to Badlands" mission files for the Livonia (Enoch) map as the project baseline — economy core (`cfgeconomycore.xml`), spawnable types, map group definitions/clusters/positions, environment territories (`env/`), central economy tables (`db/`), weather, effect areas, player spawn points, gameplay config, and `init.c`, all unmodified from the vanilla mission.
-
 ### Changed
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
+
+## [0.1.0] - 2026-07-15
+
+### Added
+- Vanilla DayZ "Road to Badlands" mission files for the Livonia (Enoch) map as the project baseline — economy core (`cfgeconomycore.xml`), spawnable types, map group definitions/clusters/positions, environment territories (`env/`), central economy tables (`db/`), weather, effect areas, player spawn points, gameplay config, and `init.c`, all unmodified from the vanilla mission.
 
 ## [1.0.1] - 2026-07-10
 
