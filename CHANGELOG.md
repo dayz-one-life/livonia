@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
+- `cfggameplay.json`: reset `environmentMinTemps`/`environmentMaxTemps` from the flat `-4`/`2` year-round values back to the vanilla Livonia per-month defaults.
+- `db/globals.xml`: raised `LootDamageMin` from `0.0` to `0.2` so loot no longer spawns in pristine condition.
 ### Deprecated
 ### Removed
 ### Fixed
