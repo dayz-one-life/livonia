@@ -3,6 +3,19 @@
 This project was created from the Claude Code workflow template. The workflow below is
 enforced by committed hooks in `.claude/` and streamlined by repo-level skills.
 
+## What this repo is
+
+A DayZ server mission for the **Livonia (Enoch)** map, based on the vanilla
+"Road to Badlands" mission. The repo root holds the mission files that a DayZ
+server loads:
+
+- **Central economy** — `db/` (`types.xml`, `events.xml`, `economy.xml`, `globals.xml`, `messages.xml`), `cfgeconomycore.xml`, `cfgspawnabletypes.xml`, `cfglimitsdefinition*.xml`, `cfgrandompresets.xml`.
+- **Map groups & spawns** — `mapgroupproto.xml`, `mapgrouppos.xml`, `mapgroupcluster*.xml`, `mapgroupdirt.xml`, `mapclusterproto.xml`, `cfgeventspawns.xml`, `cfgeventgroups.xml`, `cfgplayerspawnpoints.xml`.
+- **Environment** — `env/` (animal/infected territory definitions), `cfgenvironment.xml`, `cfgweather.xml`, `cfgeffectarea.json`, `areaflags.map`, `cfgundergroundtriggers.json`.
+- **Gameplay/misc** — `cfggameplay.json`, `cfgignorelist.xml`, `init.c` (server-side mission logic).
+
+Tweaks to the mission are made on `feature/*` branches per the workflow below.
+
 ## On session start
 
 A SessionStart hook injects a role-aware orientation. **Present that orientation to the
