@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
+- `db/messages.xml`: synced with the Chernarus version — the second broadcast now points players at `dayzonelife.com` (unban tokens + leaderboard) instead of the Discord invite.
+
 ### Deprecated
 ### Removed
 ### Fixed
