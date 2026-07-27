@@ -12,8 +12,7 @@ server loads:
 - **Central economy** — `db/` (`types.xml`, `events.xml`, `economy.xml`, `globals.xml` — server-wide economy/loot tuning vars such as `LootDamageMin`/`LootDamageMax`, `messages.xml` — in-game broadcast rotation, kept in sync with the Chernarus mission apart from the map name), `cfgeconomycore.xml`, `cfgspawnabletypes.xml`, `cfglimitsdefinition*.xml`, `cfgrandompresets.xml`.
 - **Map groups & spawns** — `mapgroupproto.xml`, `mapgrouppos.xml`, `mapgroupcluster*.xml`, `mapgroupdirt.xml`, `mapclusterproto.xml`, `cfgeventspawns.xml`, `cfgeventgroups.xml`, `cfgplayerspawnpoints.xml`.
 - **Environment** — `env/` (animal/infected territory definitions), `cfgenvironment.xml`, `cfgweather.xml`, `cfgeffectarea.json`, `areaflags.map`, `cfgundergroundtriggers.json`.
-- **Gameplay/misc** — `cfggameplay.json`, `cfgignorelist.xml`, `init.c` (server-side mission logic).
-- **Custom presets** — `custom/` holds files referenced from config, e.g. `custom/loadout.json` (spawn-gear preset wired in via `cfggameplay.json` → `spawnGearPresetFiles`).
+- **Gameplay/misc** — `cfggameplay.json`, `cfgignorelist.xml`, `init.c` (server-side mission logic). Spawn gear is vanilla default (`spawnGearPresetFiles` is empty; the former `custom/loadout.json` preset was removed).
 
 Tweaks to the mission are made on `feature/*` branches per the workflow below.
 
