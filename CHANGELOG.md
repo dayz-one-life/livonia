@@ -10,9 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 ### Deprecated
 ### Removed
-- Custom spawn-gear loadout: deleted `custom/loadout.json` and emptied `spawnGearPresetFiles` in `cfggameplay.json`, so fresh spawns get vanilla default gear again.
 ### Fixed
 ### Security
+
+## [1.1.0] - 2026-07-27
+
+### Removed
+- Custom spawn-gear loadout: deleted `custom/loadout.json` and emptied `spawnGearPresetFiles` in `cfggameplay.json`, so fresh spawns get vanilla default gear again.
 
 ## [1.0.2] - 2026-07-20
 
