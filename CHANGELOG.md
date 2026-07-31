@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
+- **Reset to vanilla:** restored `cfggameplay.json`, `db/types.xml`, and `env/zombie_territories.xml` to the vanilla `dayzOffline.enoch` versions, reverting the ~50% loot reduction, the +1 infected density bump, and all gameplay-config tweaks.
+- `db/globals.xml`: replaced with the shared parent-folder copy (vs vanilla: `FlagRefreshMaxDuration` 3456000→604800, `IdleModeCountdown` 3600→21600, `LootDamageMin` 0.2→0.25).
+- `db/messages.xml`: replaced with the shared parent-folder copy — a single broadcast every 5 minutes pointing players at the app (`dayzonelife.com`), replacing the five-message onboarding rotation.
 ### Deprecated
 ### Removed
 ### Fixed
