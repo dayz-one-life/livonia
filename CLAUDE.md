@@ -9,10 +9,12 @@ A DayZ server mission for the **Livonia (Enoch)** map, based on the vanilla
 "Road to Badlands" mission. The repo root holds the mission files that a DayZ
 server loads:
 
-- **Central economy** — `db/` (`types.xml`, `events.xml`, `economy.xml`, `globals.xml` — server-wide economy/loot tuning vars such as `LootDamageMin`/`LootDamageMax`, `messages.xml` — in-game broadcast rotation, kept in sync with the Chernarus mission apart from the map name), `cfgeconomycore.xml`, `cfgspawnabletypes.xml`, `cfglimitsdefinition*.xml`, `cfgrandompresets.xml`.
+- **Central economy** — `db/` (`types.xml`, `events.xml`, `economy.xml`, `globals.xml` — server-wide economy/loot tuning vars such as `LootDamageMin`/`LootDamageMax`, `messages.xml` — in-game broadcast, `globals.xml` and `messages.xml` are copied from the shared parent-folder versions used by all One Life maps), `cfgeconomycore.xml`, `cfgspawnabletypes.xml`, `cfglimitsdefinition*.xml`, `cfgrandompresets.xml`.
 - **Map groups & spawns** — `mapgroupproto.xml`, `mapgrouppos.xml`, `mapgroupcluster*.xml`, `mapgroupdirt.xml`, `mapclusterproto.xml`, `cfgeventspawns.xml`, `cfgeventgroups.xml`, `cfgplayerspawnpoints.xml`.
 - **Environment** — `env/` (animal/infected territory definitions), `cfgenvironment.xml`, `cfgweather.xml`, `cfgeffectarea.json`, `areaflags.map`, `cfgundergroundtriggers.json`.
 - **Gameplay/misc** — `cfggameplay.json`, `cfgignorelist.xml`, `init.c` (server-side mission logic). Spawn gear is vanilla default (`spawnGearPresetFiles` is empty; the former `custom/loadout.json` preset was removed).
+
+The mission currently matches vanilla `dayzOffline.enoch` exactly except for `db/globals.xml` and `db/messages.xml` (parent-folder copies).
 
 Tweaks to the mission are made on `feature/*` branches per the workflow below.
 
