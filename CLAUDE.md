@@ -14,7 +14,7 @@ server loads:
 - **Environment** — `env/` (animal/infected territory definitions), `cfgenvironment.xml`, `cfgweather.xml`, `cfgeffectarea.json`, `areaflags.map`, `cfgundergroundtriggers.json`.
 - **Gameplay/misc** — `cfggameplay.json`, `cfgignorelist.xml`, `init.c` (server-side mission logic). Spawn gear is vanilla default (`spawnGearPresetFiles` is empty; the former `custom/loadout.json` preset was removed).
 
-The mission currently matches vanilla `dayzOffline.enoch` exactly except for `db/globals.xml` and `db/messages.xml` (parent-folder copies).
+The mission currently matches vanilla `dayzOffline.enoch` exactly except for `db/globals.xml` and `db/messages.xml` (parent-folder copies) and `cfggameplay.json`, where every `BaseBuildingData` boolean is set to `true` ("build anywhere" — all hologram placement checks and construction checks disabled).
 
 Tweaks to the mission are made on `feature/*` branches per the workflow below.
 
