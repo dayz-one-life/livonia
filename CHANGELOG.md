@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
+## [1.1.2] - 2026-08-01
+
+### Changed
+- **Build anywhere:** set every boolean in `BaseBuildingData` in `cfggameplay.json` to `true` — all 11 `HologramData` placement checks (bbox/player/roof-clipping/base-viability/geometry-plot/angle/placement-permission/height/underwater/terrain/cold-area) and all 3 `ConstructionData` checks (roof, colliding, distance) are now disabled. Base parts can be placed and built almost anywhere, including inside other players' territories and clipping through players and objects. `disallowedTypesInUnderground` is unchanged — fence, territory-flag, and watchtower kits still cannot be placed underground.
+
 ## [1.1.1] - 2026-07-31
 
 ### Changed
